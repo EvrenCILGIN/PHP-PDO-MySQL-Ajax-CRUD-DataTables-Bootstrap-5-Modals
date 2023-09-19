@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1:3306
--- Üretim Zamanı: 18 Eyl 2023, 02:22:18
+-- Üretim Zamanı: 19 Eyl 2023, 20:35:47
 -- Sunucu sürümü: 8.0.31
 -- PHP Sürümü: 8.0.26
 
@@ -33,17 +33,18 @@ CREATE TABLE IF NOT EXISTS `users` (
   `name` varchar(150) NOT NULL,
   `surname` varchar(150) NOT NULL,
   `image` varchar(150) NOT NULL,
+  `tarih` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=62 DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM AUTO_INCREMENT=97 DEFAULT CHARSET=utf8mb3;
 
 --
 -- Tablo döküm verisi `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `surname`, `image`) VALUES
-(1, 'Evren', 'ÇILGIN', '1.jpg'),
-(60, 'Evren ÇILGIN', 'TURAN', '1555714458.jpg'),
-(61, 'Evren', 'TURAN', '176675166.png');
+INSERT INTO `users` (`id`, `name`, `surname`, `image`, `tarih`) VALUES
+(65, 'Evren', 'ÇILGIN', '2090273627.png', '2023-09-18 02:59:15'),
+(66, 'Taha', 'BAYAR', '1131702286.png', '2023-09-18 02:59:15'),
+(70, 'Evren', 'TURAN', '1130289535.png', '2023-09-18 23:21:35');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
